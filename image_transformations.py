@@ -1,7 +1,6 @@
 import cv2 as cv
 import numpy as np
 
-
 img=cv.imread('Files/images/cat1.jpg')
 cv.imshow('Cat',img)
 
@@ -24,15 +23,8 @@ print(f'{len(contours)} contours(s) found ')
 
 cv.drawContours(blank, contours, -1, (0,0,255), 2)
 cv.imshow('Contoursdrawn', blank)
-# contours- All the points in egdres of image
+# contours- All the points in egdes of image
 # heirarchies- to find contours
 # Retr-list--Retrieves contours
 # chainapprox/none/simple- returns all contours/points in a line
-
-
-
-
-
-
-
 cv.waitKey(0)
